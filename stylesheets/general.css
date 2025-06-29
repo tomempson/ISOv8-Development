@@ -1,0 +1,19 @@
+:root {
+  --primary: rgb(5, 164, 206);
+  --secondary: rgb(6, 184, 234);
+  --padding-vertical: 5%;
+}
+
+* {
+  font-family: barlow-semi-condensed, sans-serif;
+}
+
+body {
+  margin: 0;
+
+  overflow-x: hidden;
+
+  /* Delete for production, gives page extra height for scrolling */
+
+  margin-bottom: 1000px;
+}

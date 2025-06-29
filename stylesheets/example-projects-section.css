@@ -1,0 +1,175 @@
+#example-projects {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 50px var(--padding-vertical);
+}
+
+.projects-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+
+  row-gap: 35px;
+
+  height: 1000px;
+}
+
+.top-flexbox {
+  display: flex;
+
+  flex-direction: row;
+
+  height: 100%;
+
+  gap: 35px;
+}
+
+.card-overlay {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+
+  transition: 0.3s opacity;
+}
+
+.card-overlay p {
+  font-size: 30px;
+  font-weight: 500;
+
+  line-height: 55px;
+
+  color: white;
+
+  margin: 0;
+
+  z-index: 1;
+}
+
+.office-card, .bar-card, .workshop-card {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: end;
+
+  position: relative;
+
+  background-size: 100%;
+  background-position: center;
+
+  border-radius: 25px;
+
+  box-sizing: border-box;
+
+  padding: 25px;
+
+  transition: background-size 0.5s;
+}
+
+.office-card:hover, .workshop-card:hover {
+  background-size: 110%;
+
+  cursor: pointer;
+}
+
+.bar-card:hover {
+  background-size: 225%;
+
+  cursor: pointer;
+}
+
+.office-card:hover .card-overlay, .bar-card:hover .card-overlay, .workshop-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.example-projects-sub-heading {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  line-height: 55px;
+
+  color: white;
+
+  margin: 0;
+
+  z-index: 1;
+}
+
+.example-projects-heading-flexbox {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 50px;
+
+  margin-bottom: 50px;
+}
+
+#example-projects hr {
+  width: 128px;
+  height: 5px;
+
+  background-color: var(--primary);
+
+  border: none;
+
+  margin: 0 0 50px 0;
+}
+
+.example-projects-logo {
+  width: 85px;
+}
+
+.example-projects-heading {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--primary);
+
+  margin: 0;
+}
+
+.office-card {
+  flex: 3;
+
+  background-image: url(../production-images/office.jpeg);
+}
+
+.bar-card {
+  flex: 1;
+
+  background-image: url(../production-images/bar.jpeg);
+  background-size: 205%;
+}
+
+.workshop-card {
+  height: 100%;
+
+  background-image: url(../production-images/workshop.jpeg);
+}
+
+.bottom-wrapper {
+  height: 100%;
+}
+
