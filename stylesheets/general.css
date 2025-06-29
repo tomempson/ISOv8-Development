@@ -12,8 +12,4 @@ body {
   margin: 0;
 
   overflow-x: hidden;
-
-  /* Delete for production, gives page extra height for scrolling */
-
-  margin-bottom: 1000px;
 }
