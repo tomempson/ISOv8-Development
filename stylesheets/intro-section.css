@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
 
-  background-color: rgba(217, 217, 217, 0.3);
+  background-color: rgb(245, 245, 245);
 
   padding: 100px var(--padding-vertical);
 }
